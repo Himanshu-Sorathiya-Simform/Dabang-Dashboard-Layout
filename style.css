@@ -14,9 +14,10 @@
 	--color-yellow: #ffa800;
 	--color-green: #3dd857;
 	--color-purple: #be84fd;
+	--color-blue: #0295ff;
 
 	--color-pink-accent: #ffe2e6;
-	--color-orange-accent: #ffd5a5;
+	--color-orange-accent: #fff4de;
 	--color-yellow-accent: #fdf5de;
 	--color-green-accent: #dcfce7;
 	--color-purple-accent: #f4e8fe;
@@ -89,6 +90,67 @@ ul {
 	background-color: var(--color-secondary);
 	color: var(--color-text-primary);
 	border: 1px solid var(--color-text-primary);
+}
+
+.pink-bg {
+	background-color: var(--color-pink);
+}
+
+.pink-accent-bg {
+	background-color: var(--color-pink-accent);
+}
+
+.orange-bg {
+	background-color: var(--color-orange);
+}
+
+.orange-accent-bg {
+	background-color: var(--color-orange-accent);
+}
+
+.yellow-bg {
+	background-color: var(--color-yellow);
+}
+
+.yellow-accent-bg {
+	background-color: var(--color-yellow-accent);
+}
+
+.green-bg {
+	background-color: var(--color-green);
+}
+
+.green-accent-bg {
+	background-color: var(--color-green-accent);
+}
+
+.purple-bg {
+	background-color: var(--color-purple);
+}
+
+.purple-accent-bg {
+	background-color: var(--color-purple-accent);
+}
+
+.blue-bg {
+	background-color: var(--color-blue);
+}
+
+.square {
+	height: 1rem;
+	width: 1rem;
+}
+
+.circle {
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+}
+
+.sqiarcle {
+	height: 1rem;
+	width: 1rem;
+	border-radius: 0.3rem;
 }
 
 /*@ #CONTAINER-STYLES */
@@ -275,9 +337,11 @@ ul {
 }
 
 .header__notification-icon {
-	height: 2.5rem;
-	width: 2.5rem;
-	color: var(--color-primary);
+	height: 3.5rem;
+	width: 3.5rem;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	color: var(--color-yellow);
 }
 
 .header__user {
@@ -305,4 +369,194 @@ ul {
 .header__user--role {
 	font-size: 1.2rem;
 	font-weight: 300;
+}
+
+/*@ #MAIN-STYLES */
+.main {
+	background-color: var(--color-accent);
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	padding: 3rem;
+}
+
+.card__container {
+	display: flex;
+	gap: 3rem;
+	background-color: var(--color-secondary);
+	border-radius: 1.5rem;
+}
+
+.card {
+	box-shadow: -0.3rem 0.7rem 0.7rem #cfcfcf;
+	padding: 2rem;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	border-radius: 1.5rem;
+}
+
+.card__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card__info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.card__panel {
+	display: flex;
+	gap: 1rem;
+}
+
+.card__heading {
+	color: var(--color-heading);
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.card__description {
+	color: var(--color-text-secondary);
+	font-size: 1.5rem;
+}
+
+.card__tile {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+.card__tile-icon {
+	height: 4rem;
+	padding: 1rem;
+	width: 4rem;
+	border-radius: 50%;
+	color: var(--color-secondary);
+}
+
+.card__tile-price {
+	font-size: 3rem;
+	color: var(--color-heading);
+}
+
+.card__tile-info {
+	font-size: 1.4rem;
+	color: var(--color-text-secondary);
+}
+
+.card__tile-growth {
+	font-size: 1.2rem;
+	color: var(--color-primary);
+}
+
+.card--visitors-insight {
+	> .visitors-insights {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+
+		> .visitor-insight {
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+		}
+	}
+}
+
+.card--total-revenue {
+	> .total-revenues {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+
+		> .total-revenue {
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+		}
+	}
+}
+
+.card--customer-satisfaction {
+	> .customer-satisfactions {
+		display: flex;
+		gap: 3rem;
+		justify-content: center;
+
+		> .customer-satisfaction {
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+		}
+	}
+}
+
+.card--volume-service-level {
+	> .volume-services {
+		display: flex;
+		gap: 3rem;
+		justify-content: center;
+
+		> .volume-service {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
+	}
+}
+
+.indicators {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.indicator {
+	display: grid;
+	gap: 0.5rem;
+  align-items: center;
+	grid-template-columns: 1fr 1fr;
+}
+
+.indicator--info {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.indicator--details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.indicator--icon {
+	height: 4.5rem;
+	width: 4.5rem;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.indicator--heading {
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: black;
+}
+
+.indicator--place {
+	color: var(--color-text-secondary);
+}
+
+.indicator--value {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 500;
 }

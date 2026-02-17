@@ -190,7 +190,7 @@
 					</div>
 
 					<div class="header__user-container">
-						<svg class="header__notification-icon">
+						<svg class="header__notification-icon yellow-accent-bg">
 							<use xlink:href="./assets/ui_icon_sprite.svg#icon-bell"></use>
 						</svg>
 
@@ -208,6 +208,238 @@
 					</div>
 				</section>
 			</header>
+
+			<main class="main">
+				<section class="card__container">
+					<article class="card card--todas-sales">
+						<div class="card__header">
+							<div class="card__info">
+								<h3 class="card__heading">Today's Sales</h3>
+								<p class="card__description">Sales Summery</p>
+							</div>
+
+							<button class="btn btn--secondary">Export</button>
+						</div>
+
+						<div class="card__panel">
+							<div class="card__tile pink-accent-bg">
+								<svg class="card__tile-icon pink-bg">
+									<use
+										xlink:href="./assets/ui_icon_sprite.svg#icon-money"></use>
+								</svg>
+								<span class="card__tile-price"><strong>$1k</strong></span>
+
+								<span class="card__tile-info">Total Sales</span>
+
+								<span class="card__tile-growth">+8% from yesterday</span>
+							</div>
+
+							<div class="card__tile orange-accent-bg">
+								<svg class="card__tile-icon orange-bg">
+									<use
+										xlink:href="./assets/ui_icon_sprite.svg#icon-document"></use>
+								</svg>
+
+								<span class="card__tile-price"><strong>300</strong></span>
+
+								<span class="card__tile-info">Total Order</span>
+
+								<span class="card__tile-growth">+8% from yesterday</span>
+							</div>
+
+							<div class="card__tile green-accent-bg">
+								<svg class="card__tile-icon green-bg">
+									<use
+										xlink:href="./assets/ui_icon_sprite.svg#icon-tag"></use>
+								</svg>
+								<span class="card__tile-price"><strong>5</strong></span>
+
+								<span class="card__tile-info">Product Sold</span>
+
+								<span class="card__tile-growth">+8% from yesterday</span>
+							</div>
+
+							<div class="card__tile purple-accent-bg">
+								<svg class="card__tile-icon purple-bg">
+									<use
+										xlink:href="./assets/ui_icon_sprite.svg#icon-users"></use>
+								</svg>
+
+								<span class="card__tile-price"><strong>8</strong></span>
+
+								<span class="card__tile-info">New Customers</span>
+
+								<span class="card__tile-growth">+8% from yesterday</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="card card--visitors-insight">
+						<div class="card__header">
+							<h3 class="card__heading">Visitor's Insight</h3>
+						</div>
+
+						<img
+							src="./assets/chart1.png"
+							alt="Visitor's Insight Chart" />
+
+						<div class="visitors-insights">
+							<div class="visitor-insight">
+								<span class="square purple-bg"></span>
+								<span class="text">Loyal Customer</span>
+							</div>
+
+							<div class="visitor-insight">
+								<span class="square orange-bg"></span>
+								<span class="text">New Customer</span>
+							</div>
+
+							<div class="visitor-insight">
+								<div class="square green-bg"></div>
+								<span class="text">Unique Customer</span>
+							</div>
+						</div>
+					</article>
+				</section>
+
+				<section class="card__container">
+					<article class="card card--total-revenue">
+						<div class="card__header">
+							<h3 class="card__heading">Total Revenue</h3>
+						</div>
+
+						<img
+							src="./assets/chart2.png"
+							alt="Total Revenue Chart" />
+
+						<div class="total-revenues">
+							<div class="total-revenue">
+								<span class="circle green-bg"></span>
+								<span class="text">Online Sales</span>
+							</div>
+
+							<div class="total-revenue">
+								<span class="circle blue-bg"></span>
+								<span class="text">Offline Sales</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="card card--customer-satisfaction">
+						<div class="card__header">
+							<h3 class="card__heading">Customer Satisfaction</h3>
+						</div>
+
+						<img
+							src="./assets/chart3.png"
+							alt="Customer Satisfaction Chart" />
+
+						<div class="customer-satisfactions">
+							<div class="customer-satisfaction">
+								<span class="sqiarcle blue-bg"></span>
+								<span class="text">Last Month</span>
+							</div>
+
+							<div class="customer-satisfaction">
+								<span class="sqiarcle green-bg"></span>
+								<span class="text">This Month</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="card card--target-reality">
+						<div class="card__header">
+							<h3 class="card__heading">Target VS Reality</h3>
+						</div>
+
+						<img
+							src="./assets/chart4.png"
+							alt="Target VS Reality Chart" />
+
+						<div class="indicators">
+							<div class="indicator">
+								<div class="indicator--info">
+									<svg class="indicator--icon green-accent-bg">
+										<use
+											xlink:href="./assets/ui_icon_sprite.svg#icon-money"></use>
+									</svg>
+
+									<div class="indicator--details">
+										<div class="indicator--heading">
+											Reality Sales
+										</div>
+										<div class="indicator--place">Global</div>
+									</div>
+								</div>
+
+								<div class="indicator--value">8500</div>
+							</div>
+
+							<div class="indicator">
+								<div class="indicator--info">
+									<svg class="indicator--icon yellow-accent-bg">
+										<use
+											xlink:href="./assets/ui_icon_sprite.svg#icon-money"></use>
+									</svg>
+
+									<div class="indicator--details">
+										<div class="indicator--heading">
+											Target Sales
+										</div>
+										<div class="indicator--place">Commercial</div>
+									</div>
+								</div>
+
+								<div class="indicator--value">10000</div>
+							</div>
+						</div>
+					</article>
+				</section>
+
+				<section class="card__container">
+					<article class="card card--top-products">
+						<div class="card__header">
+							<h3 class="card__heading">Top Product</h3>
+						</div>
+
+						<!-- <img
+						src="./assets/chart2.png"
+						alt="Top Product Chart" /> -->
+					</article>
+
+					<article class="card card-sales-mapping-country">
+						<div class="card__header">
+							<h3 class="card__heading">Sales Mapping by Country</h3>
+						</div>
+
+						<img
+							src="./assets/chart5.png"
+							alt="Sales Mapping by Country Chart" />
+					</article>
+
+					<article class="card card--volume-service-level">
+						<div class="card__header">
+							<h3 class="card__heading">Volume VS Service Level</h3>
+						</div>
+
+						<img
+							src="./assets/chart6.png"
+							alt="Volume VS Service Level Chart" />
+
+						<div class="volume-services">
+							<div class="volume-service">
+								<span class="sqiarcle blue-bg"></span>
+								<span class="text">Volume</span>
+							</div>
+
+							<div class="volume-service">
+								<span class="sqiarcle green-bg"></span>
+								<span class="text">Service</span>
+							</div>
+						</div>
+					</article>
+				</section>
+			</main>
 		</div>
 	</body>
 </html>
