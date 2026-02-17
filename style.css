@@ -208,3 +208,101 @@ ul {
 	text-wrap: pretty;
 	text-align: center;
 }
+
+/*@ #HEADER-STYLES */
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 3.5rem;
+	align-items: center;
+}
+
+.page__heading {
+	font-size: 3.5rem;
+	font-weight: 600;
+	color: var(--color-heading);
+}
+
+.header__right {
+	display: flex;
+	gap: 4rem;
+	align-items: center;
+}
+
+.header__search-container {
+	position: relative;
+}
+
+.header__search-input {
+	padding: 2rem 5rem;
+	font-size: 2rem;
+	outline: none;
+	border: none;
+	background-color: var(--color-accent);
+}
+
+.header__search-icon {
+	position: absolute;
+	height: 2.5rem;
+	width: 2.5rem;
+	color: var(--color-primary);
+	top: 1.75rem;
+	left: 1.75rem;
+}
+
+.header__country-dropdown {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.header__country-dropdown--country-flag {
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+}
+
+.header__country-dropdown--country-name {
+	font-size: 2.5rem;
+	color: var(--color-text-primary);
+	font-weight: 500;
+}
+
+.header__user-container {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.header__notification-icon {
+	height: 2.5rem;
+	width: 2.5rem;
+	color: var(--color-primary);
+}
+
+.header__user {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.header__user--avatar {
+	height: 6rem;
+	width: 6rem;
+	border-radius: 1rem;
+}
+
+.header__user--info {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__user--name {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.header__user--role {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
