@@ -1,4 +1,27 @@
 /*@ #CSS-RESETS */
+:root {
+	font-size: 62.5%;
+
+	--color-primary: #5d60ef;
+	--color-secondary: #f3f5f7;
+	--color-heading: #100841;
+	--color-accent: #fafbfd;
+	--color-text-primary: #75778c;
+	--color-text-secondary: #85868e;
+
+	--color-pink: #f95b7b;
+	--color-orange: #ff947e;
+	--color-yellow: #ffa800;
+	--color-green: #3dd857;
+	--color-purple: #be84fd;
+
+	--color-pink-accent: #ffe2e6;
+	--color-orange-accent: #ffd5a5;
+	--color-yellow-accent: #fdf5de;
+	--color-green-accent: #dcfce7;
+	--color-purple-accent: #f4e8fe;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -7,6 +30,19 @@
 
 body {
 	min-height: 100vh;
+	font-family:
+		'Poppins',
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		'Open Sans',
+		'Helvetica Neue',
+		sans-serif;
 }
 
 img,
