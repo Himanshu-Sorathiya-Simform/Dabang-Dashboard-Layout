@@ -605,3 +605,53 @@ ul {
 	font-size: 1.6rem;
 	font-weight: 500;
 }
+
+.top-product-table--grid {
+	display: grid;
+	grid-template-columns: 1fr 5fr 7fr 2fr;
+	align-items: center;
+	gap: 2rem;
+}
+
+.top-product-table--header {
+	color: var(--color-text-secondary);
+	text-align: left;
+	font-size: 1.2rem;
+	font-weight: 400;
+	padding: 1.5rem 0;
+}
+
+.top-product-table--row {
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding: 1.5rem 0;
+	border-top: 1px solid #c6c6c6;
+	color: #41434e;
+}
+
+.top-product-table--popularity {
+	display: flex;
+	align-items: center;
+
+	> span {
+		height: 0.7rem;
+	}
+
+	> span:first-child {
+		width: 70%;
+		border-top-left-radius: 0.2rem;
+		border-bottom-left-radius: 0.2rem;
+	}
+
+	> span:last-child {
+		width: 30%;
+		border-top-right-radius: 0.2rem;
+		border-bottom-right-radius: 0.2rem;
+	}
+}
+
+.top-product-table--sales {
+	padding: 0 1rem;
+	border-radius: 0.5rem;
+	text-align: center;
+}
