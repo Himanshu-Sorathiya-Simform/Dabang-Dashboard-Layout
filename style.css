@@ -7,8 +7,7 @@
 	--color-heading: #100841;
 	--color-accent: #fafbfd;
 	--color-text-primary: #75778c;
-	--color-text-secondary: #85868e;
-
+	--color-text-secondary: rgb(90, 90, 90);
 	--color-pink: #f95b7b;
 	--color-orange: #ff947e;
 	--color-yellow: #ffa800;
@@ -87,53 +86,107 @@ ul {
 }
 
 .btn--secondary {
+	color: var(--color-text-secondary);
 	background-color: var(--color-secondary);
-	color: var(--color-text-primary);
 	border: 1px solid var(--color-text-primary);
+}
+
+.icon {
+	height: 4.5rem;
+	width: 4.5rem;
+	padding: 1rem;
+}
+
+.pink-text {
+	color: var(--color-pink);
 }
 
 .pink-bg {
 	background-color: var(--color-pink);
 }
 
+.pink-border {
+	border: 1px solid var(--color-pink);
+}
+
 .pink-accent-bg {
 	background-color: var(--color-pink-accent);
+}
+
+.orange-text {
+	color: var(--color-orange);
 }
 
 .orange-bg {
 	background-color: var(--color-orange);
 }
 
+.orange-border {
+	border: 1px solid var(--color-orange);
+}
+
 .orange-accent-bg {
 	background-color: var(--color-orange-accent);
+}
+
+.yellow-text {
+	color: var(--color-yellow);
 }
 
 .yellow-bg {
 	background-color: var(--color-yellow);
 }
 
+.yellow-border {
+	border: 1px solid var(--color-yellow);
+}
+
 .yellow-accent-bg {
 	background-color: var(--color-yellow-accent);
+}
+
+.green-text {
+	color: var(--color-green);
 }
 
 .green-bg {
 	background-color: var(--color-green);
 }
 
+.green-border {
+	border: 1px solid var(--color-green);
+}
+
 .green-accent-bg {
 	background-color: var(--color-green-accent);
+}
+
+.purple-text {
+	color: var(--color-purple);
 }
 
 .purple-bg {
 	background-color: var(--color-purple);
 }
 
+.purple-border {
+	border: 1px solid var(--color-purple);
+}
+
 .purple-accent-bg {
 	background-color: var(--color-purple-accent);
 }
 
+.blue-text {
+	color: var(--color-blue);
+}
+
 .blue-bg {
 	background-color: var(--color-blue);
+}
+
+.blue-border {
+	border: 1px solid var(--color-blue);
 }
 
 .square {
@@ -147,7 +200,7 @@ ul {
 	border-radius: 50%;
 }
 
-.sqiarcle {
+.squircle {
 	height: 1rem;
 	width: 1rem;
 	border-radius: 0.3rem;
@@ -155,10 +208,11 @@ ul {
 
 /*@ #CONTAINER-STYLES */
 .container {
+	min-height: 100vh;
+
 	display: grid;
 	grid-template-columns: 2fr 9fr;
 	grid-template-rows: auto 1fr;
-	min-height: 100vh;
 }
 
 /*@ LOGO-STYLES */
@@ -198,40 +252,37 @@ ul {
 .sidebar {
 	grid-row: span 2;
 
+	padding: 3rem;
+
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
-
-	padding: 3rem;
 }
 
 .sidebar-nav {
 	> ul {
+		padding: 0 1.4rem;
+
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
-		padding: 0 1.4rem;
+		gap: 1.5rem;
 	}
 }
 
 .sidebar-nav__link {
 	border-radius: 1.2rem;
-	transition: all 0.3s;
+	color: var(--color-text-secondary);
+	padding: 1rem 2rem;
+
 	display: flex;
 	align-items: center;
 	gap: 2rem;
-	padding: 1.5rem 2.5rem;
-	color: var(--color-text-primary);
+
+	transition: all 0.3s;
 
 	&:hover {
-		background-color: var(--color-primary);
-
 		color: var(--color-secondary);
-	}
-
-	> svg {
-		height: 3.2rem;
-		width: 3.2rem;
+		background-color: var(--color-primary);
 	}
 
 	> span {
@@ -250,13 +301,14 @@ ul {
 }
 
 .dabang-ad {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	padding: 2rem 3rem;
 	gap: 2rem;
 	background-color: var(--color-primary);
 	border-radius: 1rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .dabang-ad__heading {
@@ -273,9 +325,10 @@ ul {
 
 /*@ #HEADER-STYLES */
 .header {
+	padding: 3.5rem;
+
 	display: flex;
 	justify-content: space-between;
-	padding: 3.5rem;
 	align-items: center;
 }
 
@@ -287,8 +340,8 @@ ul {
 
 .header__right {
 	display: flex;
-	gap: 4rem;
 	align-items: center;
+	gap: 4rem;
 }
 
 .header__search-container {
@@ -298,28 +351,29 @@ ul {
 .header__search-input {
 	padding: 2rem 5rem;
 	font-size: 2rem;
-	outline: none;
-	border: none;
 	background-color: var(--color-accent);
+	outline: none;
+	border-radius: 1rem;
+	border: 1px solid var(--color-text-secondary);
 }
 
 .header__search-icon {
 	position: absolute;
+	top: 1.75rem;
+	left: 1.75rem;
+
 	height: 2.5rem;
 	width: 2.5rem;
 	color: var(--color-primary);
-	top: 1.75rem;
-	left: 1.75rem;
 }
 
 .header__country-dropdown {
 	display: flex;
-	gap: 2rem;
 	align-items: center;
+	gap: 2rem;
 }
 
 .header__country-dropdown--country-flag {
-	height: 2.5rem;
 	width: 2.5rem;
 	border-radius: 50%;
 }
@@ -332,26 +386,22 @@ ul {
 
 .header__user-container {
 	display: flex;
-	gap: 2rem;
 	align-items: center;
+	gap: 2rem;
 }
 
 .header__notification-icon {
-	height: 3.5rem;
-	width: 3.5rem;
-	padding: 0.5rem;
 	border-radius: 1rem;
 	color: var(--color-yellow);
 }
 
 .header__user {
 	display: flex;
-	gap: 1rem;
 	align-items: center;
+	gap: 1rem;
 }
 
 .header__user--avatar {
-	height: 6rem;
 	width: 6rem;
 	border-radius: 1rem;
 }
@@ -383,12 +433,12 @@ ul {
 .card__container {
 	display: flex;
 	gap: 3rem;
-	background-color: var(--color-secondary);
 	border-radius: 1.5rem;
 }
 
 .card {
-	box-shadow: -0.3rem 0.7rem 0.7rem #cfcfcf;
+	background-color: var(--color-secondary);
+	box-shadow: -0.3rem 0.7rem 0.7rem #e6e6e6;
 	padding: 2rem;
 	flex-grow: 1;
 	display: flex;
@@ -435,20 +485,19 @@ ul {
 }
 
 .card__tile-icon {
-	height: 4rem;
-	padding: 1rem;
-	width: 4rem;
 	border-radius: 50%;
 	color: var(--color-secondary);
 }
 
 .card__tile-price {
-	font-size: 3rem;
+	font-size: 2.5rem;
+	font-weight: 400;
 	color: var(--color-heading);
 }
 
 .card__tile-info {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
+	font-weight: 500;
 	color: var(--color-text-secondary);
 }
 
@@ -513,50 +562,46 @@ ul {
 	}
 }
 
-.indicators {
+.target-indicators {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
 }
 
-.indicator {
+.target-indicator {
 	display: grid;
 	gap: 0.5rem;
-  align-items: center;
-	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	grid-template-columns: 3fr 2fr;
 }
 
-.indicator--info {
+.target-indicator--info {
 	display: flex;
 	gap: 0.5rem;
 	align-items: center;
 }
 
-.indicator--details {
+.target-indicator--icon {
+	border-radius: 1rem;
+}
+
+.target-indicator--details {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 }
 
-.indicator--icon {
-	height: 4.5rem;
-	width: 4.5rem;
-	padding: 1rem;
-	border-radius: 1rem;
-}
-
-.indicator--heading {
+.target-indicator--heading {
 	font-size: 1.4rem;
 	font-weight: 500;
 	color: black;
 }
 
-.indicator--place {
+.target-indicator--place {
 	color: var(--color-text-secondary);
 }
 
-.indicator--value {
-  color: black;
-  font-size: 1.6rem;
-  font-weight: 500;
+.target-indicator--value {
+	font-size: 1.6rem;
+	font-weight: 500;
 }
