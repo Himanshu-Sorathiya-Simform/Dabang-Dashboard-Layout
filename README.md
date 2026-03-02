@@ -1,3 +1,3 @@
 # Dabang-Dashboard-Layout
 
-Checkout my Dashboard [Layout](https://dabang-dashboard.netlify.app/)
+Checkout my Dashboard [Layout](https://dabang-dashboard-himanshu.netlify.app/)
